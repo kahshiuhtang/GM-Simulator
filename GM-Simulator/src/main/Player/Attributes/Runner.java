@@ -1,7 +1,7 @@
 package main.Player.Attributes;
 
 public class Runner {
-	private int truck, elusive, vision, carrying, skill, playRecognition, elusiveness;
+	private int truck, elusiveness, vision, carrying, skillMove, playRecognition;
 	private int truckPot, elusivePot, visionPot, carryingPot, skillPot, playRecognitionPot, elusivenessPot;
 	
 	protected Runner() {
@@ -15,15 +15,7 @@ public class Runner {
 	public void setTruck(int truck) {
 		this.truck = truck;
 	}
-
-	public int getElusive() {
-		return elusive;
-	}
-
-	public void setElusive(int elusive) {
-		this.elusive = elusive;
-	}
-
+	
 	public int getVision() {
 		return vision;
 	}
@@ -40,12 +32,12 @@ public class Runner {
 		this.carrying = carrying;
 	}
 
-	public int getSkill() {
-		return skill;
+	public int getSkillMove() {
+		return skillMove;
 	}
 
-	public void setSkill(int skill) {
-		this.skill = skill;
+	public void setSkill(int skillMove) {
+		this.skillMove = skillMove;
 	}
 
 	public int getPlayRecognition() {
@@ -62,5 +54,61 @@ public class Runner {
 
 	public void setElusiveness(int elusiveness) {
 		this.elusiveness = elusiveness;
+	}
+
+	public int getTruckPot() {
+		return truckPot;
+	}
+
+	public void setTruckPot(int truckPot) {
+		this.truckPot = truckPot;
+	}
+
+	public int getElusivePot() {
+		return elusivePot;
+	}
+
+	public void setElusivePot(int elusivePot) {
+		this.elusivePot = elusivePot;
+	}
+
+	public int getVisionPot() {
+		return visionPot;
+	}
+
+	public void setVisionPot(int visionPot) {
+		this.visionPot = visionPot;
+	}
+
+	public int getCarryingPot() {
+		return carryingPot;
+	}
+
+	public void setCarryingPot(int carryingPot) {
+		this.carryingPot = carryingPot;
+	}
+
+	public int getSkillPot() {
+		return skillPot;
+	}
+
+	public void setSkillPot(int skillPot) {
+		this.skillPot = skillPot;
+	}
+
+	public int getPlayRecognitionPot() {
+		return playRecognitionPot;
+	}
+
+	public void setPlayRecognitionPot(int playRecognitionPot) {
+		this.playRecognitionPot = playRecognitionPot;
+	}
+
+	public int getElusivenessPot() {
+		return elusivenessPot;
+	}
+
+	public void setElusivenessPot(int elusivenessPot) {
+		this.elusivenessPot = elusivenessPot;
 	} 
 }
