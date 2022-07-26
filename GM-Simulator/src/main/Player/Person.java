@@ -1,5 +1,7 @@
 package main.Player;
 
+import main.Player.Attributes.Attributes;
+
 public class Person {
 	private Attributes attributes;
 	private Stats stats;
@@ -11,7 +13,8 @@ public class Person {
 		attributes = new Attributes();
 		stats = new Stats();
 		badges = new Badges();
-		profile = new PersonalProfile();
+		profile = new PersonalProfile(p);
+		position = p;
 	}
 
 }
