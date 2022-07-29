@@ -3,10 +3,11 @@ package main.Player.Attributes;
 public class Receiver {
 	private int catching, trafficCatching, routeRunning, highlightReel;
 	private int catchingPot, trafficCatchingPot, routeRunningPot, highlightReelPot;
-	protected Receiver() {
-		
+
+	public Receiver() {
+
 	}
-	
+
 	public int getCatching() {
 		return catching;
 	}

@@ -1,10 +1,11 @@
 package main.Player.Attributes;
 
 public class DefendAir {
-	private int pursuit, manCoverage, zoneCoverage, press, highlightReel;
+	private int pursuit, manCoverage, zoneCoverage, press, highlightReel, catching;
 	private int pursuitPot, manCoveragePot, zoneCoveragePot, pressPot, catchingPot, highlightReelPot;
-	protected DefendAir() {
-		
+
+	public DefendAir() {
+
 	}
 
 	public int getPursuit() {
@@ -45,5 +46,13 @@ public class DefendAir {
 
 	public void setHighlightReel(int highlightReel) {
 		this.highlightReel = highlightReel;
+	}
+
+	public int getCatching() {
+		return catching;
+	}
+
+	public void setCatching(int catching) {
+		this.catching = catching;
 	}
 }

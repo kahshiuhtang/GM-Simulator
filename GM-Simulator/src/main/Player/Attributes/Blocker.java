@@ -3,8 +3,9 @@ package main.Player.Attributes;
 public class Blocker {
 	private int passBlock, runBlock, pancake;
 	private int passBlockPot, runBlockPot, pancakePot;
-	protected Blocker() {
-		
+
+	public Blocker() {
+
 	}
 
 	public int getPassBlock() {

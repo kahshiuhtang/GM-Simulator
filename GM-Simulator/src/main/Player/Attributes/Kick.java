@@ -1,12 +1,12 @@
 package main.Player.Attributes;
 
-public class Kicker {
+public class Kick {
 	private int kickPower, kickAccuracy;
-	
-	protected Kicker() {
-	
+
+	public Kick() {
+
 	}
-	
+
 	public int getKickPower() {
 		return kickPower;
 	}

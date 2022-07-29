@@ -1,13 +1,14 @@
 package main.Player.Attributes;
 
 public class Universal {
-	
+
 	private int strength, agility, speed, acceleration, stamina, awareness, jumping, toughness;
 	private int strengthPot, agilityPot, speedPot, accelerationPot, staminaPot, awarenessPot, jumpingPot, toughnessPot;
-	
-	protected Universal() {
-		
+
+	public Universal() {
+
 	}
+
 	public int getStrength() {
 		return strength;
 	}

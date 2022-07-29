@@ -2,11 +2,13 @@ package main.Player.Attributes;
 
 public class Passer {
 	private int throwPower, shortAccuracy, mediumAccuracy, deepAccuracy, improvisation, underPressure, riskTaking;
-	private int throwPowerPot, shortAccuracyPot, mediumAccuracyPot, deepAccuracyPot, improvisationPot, underPressurePot, riskTakingPot;
-	protected Passer() {
-		
+	private int throwPowerPot, shortAccuracyPot, mediumAccuracyPot, deepAccuracyPot, improvisationPot, underPressurePot,
+			riskTakingPot;
+
+	public Passer() {
+
 	}
-	
+
 	public int getThrowPower() {
 		return throwPower;
 	}

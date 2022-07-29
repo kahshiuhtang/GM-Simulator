@@ -3,9 +3,11 @@ package main.Player.Attributes;
 public class DefendGround {
 	private int tackle, powerRush, skillRush, blockShed, runStop, playRecognition, hitPower;
 	private int tacklePot, powerRushPot, skillRushPot, blockShedPot, runStopPot, playRecognitionPot, hitPowerPot;
-	protected DefendGround() {
-		
+
+	public DefendGround() {
+
 	}
+
 	public int getTackle() {
 		return tackle;
 	}
@@ -61,45 +63,59 @@ public class DefendGround {
 	public void setHitPower(int hitPower) {
 		this.hitPower = hitPower;
 	}
+
 	public int getTacklePot() {
 		return tacklePot;
 	}
+
 	public void setTacklePot(int tacklePot) {
 		this.tacklePot = tacklePot;
 	}
+
 	public int getPowerRushPot() {
 		return powerRushPot;
 	}
+
 	public void setPowerRushPot(int powerRushPot) {
 		this.powerRushPot = powerRushPot;
 	}
+
 	public int getSkillRushPot() {
 		return skillRushPot;
 	}
+
 	public void setSkillRushPot(int skillRushPot) {
 		this.skillRushPot = skillRushPot;
 	}
+
 	public int getBlockShedPot() {
 		return blockShedPot;
 	}
+
 	public void setBlockShedPot(int blockShedPot) {
 		this.blockShedPot = blockShedPot;
 	}
+
 	public int getRunStopPot() {
 		return runStopPot;
 	}
+
 	public void setRunStopPot(int runStopPot) {
 		this.runStopPot = runStopPot;
 	}
+
 	public int getPlayRecognitionPot() {
 		return playRecognitionPot;
 	}
+
 	public void setPlayRecognitionPot(int playRecognitionPot) {
 		this.playRecognitionPot = playRecognitionPot;
 	}
+
 	public int getHitPowerPot() {
 		return hitPowerPot;
 	}
+
 	public void setHitPowerPot(int hitPowerPot) {
 		this.hitPowerPot = hitPowerPot;
 	}

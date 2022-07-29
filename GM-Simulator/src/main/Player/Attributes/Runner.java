@@ -3,11 +3,11 @@ package main.Player.Attributes;
 public class Runner {
 	private int truck, elusiveness, vision, carrying, skillMove, playRecognition;
 	private int truckPot, elusivePot, visionPot, carryingPot, skillPot, playRecognitionPot, elusivenessPot;
-	
-	protected Runner() {
-		
+
+	public Runner() {
+
 	}
-	
+
 	public int getTruck() {
 		return truck;
 	}
@@ -15,7 +15,7 @@ public class Runner {
 	public void setTruck(int truck) {
 		this.truck = truck;
 	}
-	
+
 	public int getVision() {
 		return vision;
 	}
@@ -110,5 +110,5 @@ public class Runner {
 
 	public void setElusivenessPot(int elusivenessPot) {
 		this.elusivenessPot = elusivenessPot;
-	} 
+	}
 }
