@@ -1,11 +1,36 @@
 package main.Player.Attributes;
 
+import java.util.Random;
+
 public class Runner {
 	private int truck, elusiveness, vision, carrying, skillMove, playRecognition;
-	private int truckPot, elusivePot, visionPot, carryingPot, skillPot, playRecognitionPot, elusivenessPot;
+	private int truckPot, elusivenessPot, visionPot, carryingPot, skillMovePot, playRecognitionPot;
 
-	public Runner() {
+	public Runner(int t, int e, int v, int c, int sM, int pR) {
+		Random r = new Random();
+		double sd = r.nextGaussian();
+		truckPot = t + (int)(sd*13.5+r.nextDouble()*7);
+		elusivenessPot = e + (int)(sd*13.5+r.nextDouble()*7);
+		visionPot = v + (int)(sd*13.5+r.nextDouble()*7);
+		carryingPot = c + (int)(sd*13.5+r.nextDouble()*7);
+		skillMovePot = sM + (int)(sd*13.5+r.nextDouble()*7);
+		playRecognitionPot = pR + (int)(sd*13.5+r.nextDouble()*7);
+		sd = Math.abs(r.nextGaussian());
+		truck = truckPot -  13 - ((int) (sd*5));
+		elusiveness = elusivenessPot -  13 - ((int) (sd*5));
+		vision = visionPot -  13 - ((int) (sd*5));
+		carrying = carryingPot -  13 - ((int) (sd*5));
+		skillMove = skillMovePot -  13 - ((int) (sd*5));
+		playRecognition = playRecognitionPot -  13 - ((int) (sd*5));
+	}
 
+	public String toString(){
+		return "Truck: " + truck + "/" + truckPot + " Elusiveness: " +
+		elusiveness + "/" + elusivenessPot + " Vision: " +
+		vision + "/" + visionPot + " Carrying: " +
+		carrying + "/" + carryingPot + " Skill Move: " +
+		skillMove + "/" + skillMovePot + " Play Recognition: " +
+		playRecognition + "/" + playRecognitionPot;
 	}
 
 	public int getTruck() {
@@ -65,11 +90,11 @@ public class Runner {
 	}
 
 	public int getElusivePot() {
-		return elusivePot;
+		return elusivenessPot;
 	}
 
 	public void setElusivePot(int elusivePot) {
-		this.elusivePot = elusivePot;
+		this.elusivenessPot = elusivePot;
 	}
 
 	public int getVisionPot() {
@@ -89,11 +114,11 @@ public class Runner {
 	}
 
 	public int getSkillPot() {
-		return skillPot;
+		return skillMovePot;
 	}
 
 	public void setSkillPot(int skillPot) {
-		this.skillPot = skillPot;
+		this.skillMovePot = skillMovePot;
 	}
 
 	public int getPlayRecognitionPot() {

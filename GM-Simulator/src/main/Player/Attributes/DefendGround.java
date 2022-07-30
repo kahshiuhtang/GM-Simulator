@@ -1,11 +1,39 @@
 package main.Player.Attributes;
 
+import java.util.Random;
+
 public class DefendGround {
 	private int tackle, powerRush, skillRush, blockShed, runStop, playRecognition, hitPower;
 	private int tacklePot, powerRushPot, skillRushPot, blockShedPot, runStopPot, playRecognitionPot, hitPowerPot;
 
-	public DefendGround() {
+	public DefendGround(int t, int pR, int sR, int bS, int rS, int plR, int hP) {
+		Random r = new Random();
+		double sd = r.nextGaussian();
+		tacklePot = t + (int)(sd*13.5+r.nextDouble()*7);
+		powerRushPot = pR + (int)(sd*13.5+r.nextDouble()*7);
+		skillRushPot = sR + (int)(sd*13.5+r.nextDouble()*7);
+		blockShedPot = bS + (int)(sd*13.5+r.nextDouble()*7);
+		runStopPot = rS + (int)(sd*13.5+r.nextDouble()*7);
+		playRecognitionPot = plR + (int)(sd*13.5+r.nextDouble()*7);
+		hitPowerPot = hP + (int)(sd*13.5+r.nextDouble()*7);
+		sd = Math.abs(r.nextGaussian());
+		tackle = tacklePot -  13 - ((int) (sd*5));
+		powerRush =  powerRushPot - 13 - ((int) (sd*5));
+		skillRush = skillRushPot - 13 - ((int) (sd*5));
+		blockShed = blockShedPot - 13 - ((int) (sd*5));
+		runStop = runStopPot - 13 - ((int) (sd*5));
+		playRecognition = playRecognitionPot - 13 - ((int) (sd*5));
+		hitPower = hitPowerPot - 13 - ((int) (sd*5));
+	}
 
+	public String toString(){
+		return "Tackle: " + tackle + "/" + tacklePot + " Power Rush: " +
+		powerRush + "/" +  powerRushPot + " Skill Rush: " +
+		skillRush + "/" + skillRushPot + " Block Shed: " +
+		blockShed + "/" + blockShedPot + " Run Stop: " +
+		runStop + "/" + runStopPot + " Play Recognition: " +
+		playRecognition + "/" + playRecognitionPot + " Hit Power: " +
+		hitPower + "/" + hitPowerPot;
 	}
 
 	public int getTackle() {

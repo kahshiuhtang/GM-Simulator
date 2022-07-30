@@ -1,10 +1,24 @@
 package main.Player.Attributes;
 
+import java.util.Random;
+
 public class Kick {
 	private int kickPower, kickAccuracy;
+	private int kickPowerPot, kickAccuracyPot;
 
-	public Kick() {
+	public Kick(int kP, int kA) {
+		Random r = new Random();
+		double sd = r.nextGaussian();
+		kickPowerPot = kP + (int)(sd*13.5+r.nextDouble()*7);
+		kickAccuracyPot = kA + (int)(sd*13.5+r.nextDouble()*7);
+		sd = Math.abs(r.nextGaussian());
+		kickPower = kickPowerPot -  13 - ((int) (sd*5));
+		kickAccuracy = kickAccuracyPot -  13 - ((int) (sd*5));
+	}
 
+	public String toString(){
+		return "KickPower: " + kickPower + "/" + kickPowerPot + " Kick Accuracy: " +
+		kickAccuracy + "/" + kickAccuracyPot;
 	}
 
 	public int getKickPower() {
@@ -21,5 +35,21 @@ public class Kick {
 
 	public void setKickAccuracy(int kickAccuracy) {
 		this.kickAccuracy = kickAccuracy;
+	}
+
+	public int getKickPowerPot() {
+		return kickPowerPot;
+	}
+
+	public void setKickPowerPot(int kickPowerPot) {
+		this.kickPowerPot = kickPowerPot;
+	}
+
+	public int getKickAccuracyPot() {
+		return kickAccuracyPot;
+	}
+
+	public void setKickAccuracyPot(int kickAccuracyPot) {
+		this.kickAccuracyPot = kickAccuracyPot;
 	}
 }
