@@ -14,7 +14,36 @@ public class Safety extends Person {
 
     public Safety() {
         super(Position.S);
-        // TODO Auto-generated constructor stub
+        defendAir = new DefendAir(60, 60, 65, 60, 50, 65);
+        defendGround = new DefendGround(60, 50, 45, 45, 55, 65, 55);
+        universal = new Universal(65, 65, 70, 70, 60, 70, 70, 65);
     }
 
+    public String toString(){
+        return defendAir.toString() + defendGround.toString() + universal.toString();
+    }
+
+    public DefendAir getDefendAir() {
+        return defendAir;
+    }
+
+    public void setDefendAir(DefendAir defendAir) {
+        this.defendAir = defendAir;
+    }
+
+    public DefendGround getDefendGround() {
+        return defendGround;
+    }
+
+    public void setDefendGround(DefendGround defendGround) {
+        this.defendGround = defendGround;
+    }
+
+    public Universal getUniversal() {
+        return universal;
+    }
+
+    public void setUniversal(Universal universal) {
+        this.universal = universal;
+    }
 }

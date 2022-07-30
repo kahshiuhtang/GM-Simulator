@@ -11,7 +11,27 @@ public class OffensiveGuard extends Person {
 
 	public OffensiveGuard() {
 		super(Position.OG);
-		// TODO Auto-generated constructor stub
+		blocker = new Blocker(65, 65, 55);
+		universal = new Universal(70, 50, 45, 40, 70, 60, 40, 75);
 	}
 
+	public String toString(){
+		return blocker.toString() + universal.toString();
+	}
+
+	public Blocker getBlocker() {
+		return blocker;
+	}
+
+	public void setBlocker(Blocker blocker) {
+		this.blocker = blocker;
+	}
+
+	public Universal getUniversal() {
+		return universal;
+	}
+
+	public void setUniversal(Universal universal) {
+		this.universal = universal;
+	}
 }

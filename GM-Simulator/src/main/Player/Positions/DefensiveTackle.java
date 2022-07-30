@@ -14,6 +14,36 @@ public class DefensiveTackle extends Person {
 
 	public DefensiveTackle() {
 		super(Position.DT);
+		defendAir = new DefendAir(50, 50, 40, 25, 25, 40);
+		defendGround = new DefendGround(65, 60, 60, 65, 70, 45, 65);
+		universal = new Universal(75, 55, 55, 50, 65, 65, 50, 75);
 	}
 
+	public String toString(){
+		return defendAir.toString() + defendGround.toString() + universal.toString();
+	}
+
+	public DefendAir getDefendAir() {
+		return defendAir;
+	}
+
+	public void setDefendAir(DefendAir defendAir) {
+		this.defendAir = defendAir;
+	}
+
+	public DefendGround getDefendGround() {
+		return defendGround;
+	}
+
+	public void setDefendGround(DefendGround defendGround) {
+		this.defendGround = defendGround;
+	}
+
+	public Universal getUniversal() {
+		return universal;
+	}
+
+	public void setUniversal(Universal universal) {
+		this.universal = universal;
+	}
 }
