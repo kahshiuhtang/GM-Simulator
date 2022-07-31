@@ -27,14 +27,22 @@ public class Passer {
 		riskTaking = riskTakingPot -  13 - ((int) (sd*5));
 	}
 
+	public int sumOverall(){
+		return throwPower + shortAccuracy + mediumAccuracy + deepAccuracy + improvisation + underPressure + riskTaking;
+	}
+
+	public int sumPotential(){
+		return throwPowerPot + shortAccuracyPot + mediumAccuracyPot + deepAccuracyPot + improvisationPot + underPressurePot + riskTakingPot;
+	}
+
 	public String toString(){
-		return " Throw Power: " + throwPowerPot + "/" + throwPower + " Short Accuracy: " +
-		shortAccuracyPot + "/" + shortAccuracy + " Medium Accuracy: "+
-		mediumAccuracyPot + "/" + mediumAccuracy + " Deep Accuracy: " +
-		deepAccuracyPot + "/" + deepAccuracy + " Improvisation: " +
-		improvisationPot + "/" + improvisation + " Under Pressure: " +
-		underPressurePot + "/" + underPressure + " Risk Taking: " +
-		riskTakingPot + "/" + riskTaking;
+		return " Throw Power: " + throwPower + "/" + throwPowerPot + " Short Accuracy: " +
+		shortAccuracy + "/" + shortAccuracyPot + " Medium Accuracy: "+
+		mediumAccuracy + "/" + mediumAccuracyPot + " Deep Accuracy: " +
+		deepAccuracy + "/" + deepAccuracyPot + " Improvisation: " +
+		improvisation + "/" + improvisationPot + " Under Pressure: " +
+		underPressure + "/" + underPressurePot + " Risk Taking: " +
+		riskTaking + "/" + riskTakingPot;
 	}
 
 	public int getThrowPower() {

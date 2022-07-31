@@ -30,6 +30,14 @@ public class Universal {
 		toughness=toughnessPot -  13 - ((int) (sd*5));
 	}
 
+	public int sumOverall(){
+		return strength + agility + speed + acceleration + stamina + awareness + jumping + toughness;
+	}
+
+	public int sumPotential(){
+		return strengthPot + agilityPot + speedPot + accelerationPot + staminaPot + awarenessPot + jumpingPot + toughnessPot;
+	}
+
 	public String toString(){
 		return "Strength: " + strength + "/" + strengthPot + " Agility: " +
 		agility + "/" + agilityPot + " Speed: " +

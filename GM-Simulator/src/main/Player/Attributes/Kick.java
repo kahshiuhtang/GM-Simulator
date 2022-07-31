@@ -16,6 +16,14 @@ public class Kick {
 		kickAccuracy = kickAccuracyPot -  13 - ((int) (sd*5));
 	}
 
+	public int sumOverall(){
+		return kickPower + kickAccuracy;
+	}
+
+	public int sumPotential(){
+		return kickPowerPot + kickAccuracyPot;
+	}
+
 	public String toString(){
 		return "KickPower: " + kickPower + "/" + kickPowerPot + " Kick Accuracy: " +
 		kickAccuracy + "/" + kickAccuracyPot;

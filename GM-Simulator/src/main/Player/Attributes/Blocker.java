@@ -19,9 +19,14 @@ public class Blocker {
 		runBlock = runBlockPot - 13 - ((int) (sd*5));
 		pancake = pancakePot - 13 - ((int) (sd*5));
 	}
+	public int sumOverall(){
+		return passBlock + runBlock + pancake;
+	}
+	public int sumPotential(){
+		return passBlockPot + runBlockPot + pancakePot;
+	}
 	public String toString(){
-		return "Pass Block: "+ passBlock + " Run Block:" + runBlock + " Pancake:" + pancake + " Pass Block Pot:"
-				+ passBlockPot + " Run Block Pot:" + runBlockPot + " Pancake Pot:" + pancakePot;
+		return "Pass Block: "+ passBlock  + "/" + passBlockPot + " Run Block: " + runBlock + "/" + runBlockPot +" Pancake: " + pancake + "/" + pancakePot;
 	}
 
 	public int getPassBlock() {

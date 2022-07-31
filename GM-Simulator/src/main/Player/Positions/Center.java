@@ -1,7 +1,7 @@
 package main.Player.Positions;
 
 import main.Player.Person;
-import main.Player.Position;
+import main.Player.PositionName;
 import main.Player.Attributes.Blocker;
 import main.Player.Attributes.Universal;
 
@@ -12,13 +12,22 @@ public class Center extends Person {
 
     public Center() {
 
-        super(Position.C);
+        super(PositionName.C);
         blocker = new Blocker(65, 65,55);
         universal = new Universal(70, 50, 50, 40, 70, 60, 40, 75);
     }
 
+    public int overall(){
+        return (blocker.sumOverall()/3 + universal.sumOverall()/8)/2;
+    }
+
+    public int potential(){
+        return (blocker.sumPotential()/3 + universal.sumPotential()/8)/2;
+    }
+
+
     public String toString(){
-        return blocker.toString() + universal.toString();
+        return "Center: " + blocker.toString() + universal.toString();
     }
 
     public Blocker getBlocker() {

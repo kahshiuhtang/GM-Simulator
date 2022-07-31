@@ -26,6 +26,14 @@ public class DefendGround {
 		hitPower = hitPowerPot - 13 - ((int) (sd*5));
 	}
 
+	public int sumOverall(){
+		return  tackle + powerRush + skillRush + blockShed + runStop + playRecognition + hitPower;
+	}
+
+	public int sumPotential(){
+		return tacklePot + powerRushPot + skillRushPot + blockShedPot + runStopPot + playRecognitionPot + hitPowerPot;
+	}
+
 	public String toString(){
 		return "Tackle: " + tackle + "/" + tacklePot + " Power Rush: " +
 		powerRush + "/" +  powerRushPot + " Skill Rush: " +

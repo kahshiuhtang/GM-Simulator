@@ -1,7 +1,7 @@
 package main.Player.Positions;
 
 import main.Player.Person;
-import main.Player.Position;
+import main.Player.PositionName;
 import main.Player.Attributes.Passer;
 import main.Player.Attributes.Runner;
 import main.Player.Attributes.Universal;
@@ -13,14 +13,20 @@ public class Quarterback extends Person {
 	private Runner runner;
 
 	public Quarterback() {
-		super(Position.QB);
+		super(PositionName.QB);
 		passer = new Passer(65, 75, 70, 65, 65, 60, 60);
 		universal = new Universal(40, 45, 50, 40, 40, 65, 35, 50);
 		runner = new Runner(30, 50, 45, 45, 35, 50);
 	}
+	public int overall(){
+		return (passer.sumOverall()/7 + universal.sumOverall()/8 + runner.sumOverall()/6)/3;
+	}
 
+	public int potential(){
+		return(passer.sumPotential()/7 + universal.sumPotential()/8 + runner.sumPotential()/6)/3;
+	}
 	public String toString(){
-		return passer.toString() + universal.toString() + runner.toString();
+		return "Quarterback: " +passer.toString() + universal.toString() + runner.toString();
 	}
 
 	public Passer getPasser() {

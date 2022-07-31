@@ -1,7 +1,7 @@
 package main.Player.Positions;
 
 import main.Player.Person;
-import main.Player.Position;
+import main.Player.PositionName;
 import main.Player.Attributes.DefendAir;
 import main.Player.Attributes.DefendGround;
 import main.Player.Attributes.Universal;
@@ -12,14 +12,22 @@ public class Cornerback extends Person {
     public Universal universal;
 
     public Cornerback() {
-        super(Position.CB);
+        super(PositionName.CB);
         defendAir = new DefendAir(65,65,60,65,55,65);
         defendGround = new DefendGround(55,35,30,30,40,55,50);
         universal = new Universal(60, 70, 70, 70, 60, 70, 75, 60);
     }
 
+    public int overall(){
+        return (defendGround.sumOverall()/7 + defendAir.sumOverall()/6 + universal.sumOverall()/8)/3;
+    }
+
+    public int potential(){
+        return (defendGround.sumPotential()/7 + defendAir.sumPotential()/6 + universal.sumPotential()/8)/3;
+    }
+
     public String toString(){
-        return defendAir.toString() + defendGround.toString() + universal.toString();
+        return "Cornerback: " + defendAir.toString() + defendGround.toString() + universal.toString();
     }
 
     public DefendAir getDefendAir() {

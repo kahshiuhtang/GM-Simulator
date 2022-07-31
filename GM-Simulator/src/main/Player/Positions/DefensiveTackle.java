@@ -1,7 +1,7 @@
 package main.Player.Positions;
 
 import main.Player.Person;
-import main.Player.Position;
+import main.Player.PositionName;
 import main.Player.Attributes.DefendAir;
 import main.Player.Attributes.DefendGround;
 import main.Player.Attributes.Universal;
@@ -13,14 +13,22 @@ public class DefensiveTackle extends Person {
 	public Universal universal;
 
 	public DefensiveTackle() {
-		super(Position.DT);
+		super(PositionName.DT);
 		defendAir = new DefendAir(50, 50, 40, 25, 25, 40);
 		defendGround = new DefendGround(65, 60, 60, 65, 70, 45, 65);
 		universal = new Universal(75, 55, 55, 50, 65, 65, 50, 75);
 	}
 
+	public int overall(){
+		return (defendGround.sumOverall()/7 + defendAir.sumOverall()/6 + universal.sumOverall()/8)/3;
+	}
+
+	public int potential(){
+		return (defendGround.sumPotential()/7 + defendAir.sumPotential()/6 + universal.sumPotential()/8)/3;
+	}
+
 	public String toString(){
-		return defendAir.toString() + defendGround.toString() + universal.toString();
+		return "Defensive Tackle: " + defendAir.toString() + defendGround.toString() + universal.toString();
 	}
 
 	public DefendAir getDefendAir() {

@@ -25,6 +25,14 @@ public class DefendAir {
 		catching = catchingPot - 13 - ((int) (sd*5));
 
 	}
+
+	public int sumOverall(){
+		return pursuit + manCoverage + zoneCoverage + press + highlightReel + catching;
+	}
+
+	public int sumPotential(){
+		return pursuitPot + manCoveragePot + zoneCoveragePot + pressPot + catchingPot + highlightReelPot;
+	}
 	public String toString(){
 		return "Pursuit: " +pursuit + "/" + pursuitPot + " Man Coverage:" +
 		manCoverage + "/" + manCoveragePot + " Zone Coverage:"+

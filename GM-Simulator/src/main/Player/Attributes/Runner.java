@@ -24,6 +24,14 @@ public class Runner {
 		playRecognition = playRecognitionPot -  13 - ((int) (sd*5));
 	}
 
+	public int sumOverall(){
+		return truck + elusiveness + vision + carrying + skillMove + playRecognition;
+	}
+
+	public int sumPotential(){
+		return truckPot + elusivenessPot + visionPot + carryingPot + skillMovePot + playRecognitionPot;
+	}
+
 	public String toString(){
 		return "Truck: " + truck + "/" + truckPot + " Elusiveness: " +
 		elusiveness + "/" + elusivenessPot + " Vision: " +

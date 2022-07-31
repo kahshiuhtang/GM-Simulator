@@ -20,6 +20,14 @@ public class Receiver {
 		highlightReel = highlightReelPot -  13 - ((int) (sd*5));
 	}
 
+	public int sumOverall(){
+		return catching + trafficCatching + routeRunning + highlightReel;
+	}
+
+	public int sumPotential(){
+		return catchingPot + trafficCatchingPot + routeRunningPot + highlightReelPot;
+	}
+
 	public String toString(){
 		return "Catching: " + catching + "/" + catchingPot + " Traffic Catching: " +
 		trafficCatching + "/" + trafficCatchingPot + " Route Running: " +
