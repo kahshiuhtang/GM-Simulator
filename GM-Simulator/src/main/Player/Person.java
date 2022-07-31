@@ -1,6 +1,8 @@
 package main.Player;
 
-public class Person {
+import main.Player.Stats.Stats;
+
+public abstract class Person {
 	private Stats stats;
 	private PositionName positionName;
 	private Badges badges;
@@ -13,10 +15,6 @@ public class Person {
 		positionName = p;
 	}
 
-	public int overall() {
-		return 0;
-	}
-	public int potential(){
-		return 0;
-	}
+	public abstract int overall();
+	public abstract int potential();
 }

@@ -66,8 +66,6 @@ public class Team {
     public String overall(){
         for(int i = 0; i < 53; i++){
             System.out.println(team[i].overall());
-            System.out.println(team[i].overall() + "/" + team[i].potential());
-            System.out.println();
             System.out.println();
         }
         return "";
