@@ -19,11 +19,11 @@ public class Quarterback extends Person {
 		runner = new Runner(30, 50, 45, 45, 35, 50);
 	}
 	public int overall(){
-		return (passer.sumOverall()/7 + universal.sumOverall()/8 + runner.sumOverall()/6)/3;
+		return (passer.sumOverall()/6 + universal.sumOverall()/8 + runner.sumOverall()/4)/3;
 	}
 
 	public int potential(){
-		return(passer.sumPotential()/7 + universal.sumPotential()/8 + runner.sumPotential()/6)/3;
+		return(passer.sumPotential()/6 + universal.sumPotential()/8 + runner.sumPotential()/4)/3;
 	}
 	public String toString(){
 		return "Quarterback: " +passer.toString() + universal.toString() + runner.toString();

@@ -21,10 +21,10 @@ public class Fullback extends Person {
 		universal = new Universal(65, 60, 60, 55, 65, 55, 50, 70);
 	}
 	public int overall(){
-		return (blocker.sumOverall()/3 + receiver.sumOverall()/4 + runner.sumOverall()/6 + universal.sumOverall()/8)/4;
+		return ((((int)(blocker.sumOverall()/2.7)) + ((int)(receiver.sumOverall()/2.5)) + runner.sumOverall()/6 + universal.sumOverall()/8)/4);
 	}
 	public int potential(){
-		return (blocker.sumPotential()/3 + receiver.sumPotential()/4 + runner.sumPotential()/6 + universal.sumPotential()/8)/4;
+		return (((int)(blocker.sumPotential()/2.7)) + ((int)(receiver.sumPotential()/2.5)) + runner.sumPotential()/6 + universal.sumPotential()/8)/4;
 	}
 
 	public String toString(){

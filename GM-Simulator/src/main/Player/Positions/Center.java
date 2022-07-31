@@ -18,11 +18,11 @@ public class Center extends Person {
     }
 
     public int overall(){
-        return (blocker.sumOverall()/3 + universal.sumOverall()/8)/2;
+        return (blocker.sumOverall()/3 + universal.sumOverall()/7)/2;
     }
 
     public int potential(){
-        return (blocker.sumPotential()/3 + universal.sumPotential()/8)/2;
+        return (blocker.sumPotential()/3 + universal.sumPotential()/7)/2;
     }
 
 

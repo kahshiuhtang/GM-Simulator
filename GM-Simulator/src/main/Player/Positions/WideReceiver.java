@@ -24,10 +24,10 @@ public class WideReceiver extends Person {
 	}
 
 	public int overall(){
-		return (blocker.sumOverall()/3 + receiver.sumOverall()/4 + runner.sumOverall()/6 + universal.sumOverall()/8)/4;
+		return (((int)(blocker.sumOverall()/1.5)) + receiver.sumOverall()/4 + runner.sumOverall()/5 + universal.sumOverall()/8)/4;
 	}
 	public int potential(){
-		return (blocker.sumPotential()/3 + receiver.sumPotential()/4 + runner.sumPotential()/6 + universal.sumPotential()/8)/4;
+		return (((int)(blocker.sumPotential()/1.5)) + receiver.sumPotential()/4 + runner.sumPotential()/5 + universal.sumPotential()/8)/4;
 	}
 
 	public String toString(){

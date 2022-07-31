@@ -22,10 +22,10 @@ public class Halfback extends Person {
 	}
 
 	public int overall(){
-		return (blocker.sumOverall()/3 + receiver.sumOverall()/4 + runner.sumOverall()/6 + universal.sumOverall()/8)/4;
+		return (((int)(blocker.sumOverall()/2.1)) + receiver.sumOverall()/3 + runner.sumOverall()/6 + universal.sumOverall()/8)/4;
 	}
 	public int potential(){
-		return (blocker.sumPotential()/3 + receiver.sumPotential()/4 + runner.sumPotential()/6 + universal.sumPotential()/8)/4;
+		return (((int)(blocker.sumPotential()/2.1)) + receiver.sumPotential()/3 + runner.sumPotential()/6 + universal.sumPotential()/8)/4;
 	}
 	public String toString(){
 		return "Halfback: " + blocker.toString() + receiver.toString() + runner.toString() + universal.toString();

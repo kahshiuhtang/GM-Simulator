@@ -17,11 +17,11 @@ public class Punter extends Person {
 	}
 
 	public int overall(){
-		return (kick.sumOverall()/2 + universal.sumOverall()/8)/2;
+		return (kick.sumOverall()/2 + universal.sumOverall()/6)/2;
 	}
 
 	public int potential(){
-		return (kick.sumPotential()/2 + universal.sumPotential()/8)/2;
+		return (kick.sumPotential()/2 + universal.sumPotential()/6)/2;
 	}
 
 	public String toString(){

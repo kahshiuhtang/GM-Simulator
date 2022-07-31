@@ -20,11 +20,11 @@ public class DefensiveTackle extends Person {
 	}
 
 	public int overall(){
-		return (defendGround.sumOverall()/7 + defendAir.sumOverall()/6 + universal.sumOverall()/8)/3;
+		return (defendGround.sumOverall()/7 + ((int)(defendAir.sumPotential()/3.5)) + universal.sumOverall()/8)/3;
 	}
 
 	public int potential(){
-		return (defendGround.sumPotential()/7 + defendAir.sumPotential()/6 + universal.sumPotential()/8)/3;
+		return (defendGround.sumPotential()/7 + ((int)(defendAir.sumPotential()/3.5)) + universal.sumPotential()/8)/3;
 	}
 
 	public String toString(){
