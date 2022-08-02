@@ -1,5 +1,6 @@
 package main.Player.Positions;
 
+import main.Player.Attributes.Attribute;
 import main.Player.Person;
 import main.Player.PositionName;
 import main.Player.Attributes.Kick;
@@ -16,6 +17,10 @@ public class Punter extends Person {
 		universal = new Universal(40, 45, 50, 50, 70, 55, 35, 55);
 	}
 
+	public Attribute[] getAttributes(){
+		Attribute[] ans = {kick, universal};
+		return ans;
+	}
 	public int overall(){
 		return (kick.sumOverall()/2 + universal.sumOverall()/6)/2;
 	}

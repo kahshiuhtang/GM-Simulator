@@ -1,11 +1,8 @@
 package main.Player.Positions;
 
+import main.Player.Attributes.*;
 import main.Player.Person;
 import main.Player.PositionName;
-import main.Player.Attributes.Blocker;
-import main.Player.Attributes.Receiver;
-import main.Player.Attributes.Runner;
-import main.Player.Attributes.Universal;
 
 public class WideReceiver extends Person {
 
@@ -21,6 +18,11 @@ public class WideReceiver extends Person {
 		runner = new Runner(45, 60, 55, 60, 65, 50);
 		universal = new Universal(55, 65, 70, 70, 55, 60, 75, 60);
 
+	}
+
+	public Attribute[] getAttributes(){
+		Attribute[] ans = {blocker, receiver, runner, universal};
+		return ans;
 	}
 
 	public int overall(){

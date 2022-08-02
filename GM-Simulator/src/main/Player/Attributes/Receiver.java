@@ -2,7 +2,7 @@ package main.Player.Attributes;
 
 import java.util.Random;
 
-public class Receiver {
+public class Receiver extends Attribute{
 	private int catching, trafficCatching, routeRunning, highlightReel;
 	private int catchingPot, trafficCatchingPot, routeRunningPot, highlightReelPot;
 

@@ -1,5 +1,6 @@
 package main.Player.Positions;
 
+import main.Player.Attributes.Attribute;
 import main.Player.Person;
 import main.Player.PositionName;
 import main.Player.Attributes.Blocker;
@@ -13,6 +14,11 @@ public class OffensiveTackle extends Person {
         super(PositionName.OT);
         blocker = new Blocker(70, 70, 60);
         universal = new Universal(75, 55, 55, 55, 65, 60, 40, 75);
+    }
+
+    public Attribute[] getAttributes(){
+        Attribute[] ans = {blocker, universal};
+        return ans;
     }
 
     public int overall(){

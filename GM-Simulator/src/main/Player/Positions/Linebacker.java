@@ -1,5 +1,6 @@
 package main.Player.Positions;
 
+import main.Player.Attributes.Attribute;
 import main.Player.Person;
 import main.Player.PositionName;
 import main.Player.Attributes.DefendAir;
@@ -19,6 +20,10 @@ public class Linebacker extends Person {
 		universal = new Universal(70, 65, 65, 65, 65, 75, 70, 70);
 	}
 
+	public Attribute[] getAttributes(){
+		Attribute[] ans = {defendAir, defendGround, universal};
+		return ans;
+	}
 	public int overall(){
 		return (defendGround.sumOverall()/7 + defendAir.sumOverall()/5 + universal.sumOverall()/8)/3;
 	}

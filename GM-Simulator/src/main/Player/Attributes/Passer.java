@@ -2,7 +2,7 @@ package main.Player.Attributes;
 
 import java.util.Random;
 
-public class Passer {
+public class Passer extends Attribute{
 	private int throwPower, shortAccuracy, mediumAccuracy, deepAccuracy, improvisation, underPressure, riskTaking;
 
 	private int throwPowerPot, shortAccuracyPot, mediumAccuracyPot, deepAccuracyPot, improvisationPot, underPressurePot,

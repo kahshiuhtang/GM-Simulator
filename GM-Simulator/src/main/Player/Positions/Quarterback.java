@@ -1,5 +1,6 @@
 package main.Player.Positions;
 
+import main.Player.Attributes.Attribute;
 import main.Player.Person;
 import main.Player.PositionName;
 import main.Player.Attributes.Passer;
@@ -17,6 +18,11 @@ public class Quarterback extends Person {
 		passer = new Passer(65, 75, 70, 65, 65, 60, 60);
 		universal = new Universal(40, 45, 50, 40, 40, 65, 35, 50);
 		runner = new Runner(30, 50, 45, 45, 35, 50);
+	}
+
+	public Attribute[] getAttributes(){
+		Attribute[] ans = {passer, runner, universal};
+		return ans;
 	}
 	public int overall(){
 		return (passer.sumOverall()/6 + universal.sumOverall()/8 + runner.sumOverall()/4)/3;

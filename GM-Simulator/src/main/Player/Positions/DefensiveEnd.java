@@ -1,5 +1,6 @@
 package main.Player.Positions;
 
+import main.Player.Attributes.Attribute;
 import main.Player.Person;
 import main.Player.PositionName;
 import main.Player.Attributes.DefendAir;
@@ -11,11 +12,17 @@ public class DefensiveEnd extends Person {
     public DefendGround defendGround;
     public Universal universal;
 
+
     public DefensiveEnd() {
         super(PositionName.DE);
         defendAir = new DefendAir(60, 50, 45, 30, 25, 45);
         defendGround = new DefendGround(70, 65, 65, 70, 65, 50, 70);
         universal = new Universal(75 ,60 ,60 ,60 ,65,65, 60 ,75);
+    }
+
+    public Attribute[] getAttributes(){
+        Attribute[] ans = {defendAir, defendGround, universal};
+        return ans;
     }
 
     public int overall(){

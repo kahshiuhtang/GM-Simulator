@@ -2,7 +2,7 @@ package main.Player.Attributes;
 
 import java.util.Random;
 
-public class DefendGround {
+public class DefendGround extends Attribute{
 	private int tackle, powerRush, skillRush, blockShed, runStop, playRecognition, hitPower;
 	private int tacklePot, powerRushPot, skillRushPot, blockShedPot, runStopPot, playRecognitionPot, hitPowerPot;
 

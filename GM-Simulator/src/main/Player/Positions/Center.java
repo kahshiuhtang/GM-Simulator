@@ -1,5 +1,6 @@
 package main.Player.Positions;
 
+import main.Player.Attributes.Attribute;
 import main.Player.Person;
 import main.Player.PositionName;
 import main.Player.Attributes.Blocker;
@@ -17,6 +18,10 @@ public class Center extends Person {
         universal = new Universal(70, 50, 50, 40, 70, 60, 40, 75);
     }
 
+    public Attribute[] getAttributes(){
+        Attribute[] ans = {blocker, universal};
+        return ans;
+    }
     public int overall(){
         return (blocker.sumOverall()/3 + universal.sumOverall()/7)/2;
     }

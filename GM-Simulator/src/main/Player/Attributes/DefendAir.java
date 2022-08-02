@@ -2,7 +2,7 @@ package main.Player.Attributes;
 
 import java.util.Random;
 
-public class DefendAir {
+public class DefendAir extends Attribute{
 	private int pursuit, manCoverage, zoneCoverage, press, highlightReel, catching;
 
 	private int pursuitPot, manCoveragePot, zoneCoveragePot, pressPot, catchingPot, highlightReelPot;

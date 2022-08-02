@@ -2,7 +2,7 @@ package main.Player.Attributes;
 
 import java.util.Random;
 
-public class Runner {
+public class Runner extends Attribute{
 	private int truck, elusiveness, vision, carrying, skillMove, playRecognition;
 	private int truckPot, elusivenessPot, visionPot, carryingPot, skillMovePot, playRecognitionPot;
 

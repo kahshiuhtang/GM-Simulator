@@ -1,0 +1,13 @@
+package main.Player.Attributes;
+
+public abstract class Attribute {
+
+    public Attribute(){
+
+    }
+
+    public abstract int sumOverall();
+
+    public abstract int sumPotential();
+
+}

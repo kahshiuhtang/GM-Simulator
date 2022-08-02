@@ -1,5 +1,6 @@
 package main.Player.Positions;
 
+import main.Player.Attributes.Attribute;
 import main.Player.Person;
 import main.Player.PositionName;
 import main.Player.Attributes.Kick;
@@ -12,6 +13,10 @@ public class Kicker extends Person{
 		super(PositionName.K);
 		kick = new Kick(65, 70);
 		universal = new Universal(40, 45, 50, 45, 70, 55, 35, 45);
+	}
+	public Attribute[] getAttributes(){
+		Attribute[] ans = {kick, universal};
+		return ans;
 	}
 
 	public int overall(){

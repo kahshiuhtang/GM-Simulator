@@ -1,5 +1,6 @@
 package main.Player;
 
+import main.Player.Attributes.Attribute;
 import main.Player.Stats.Stats;
 
 public abstract class Person {
@@ -17,4 +18,7 @@ public abstract class Person {
 
 	public abstract int overall();
 	public abstract int potential();
+	public abstract Attribute[] getAttributes();
+
+
 }

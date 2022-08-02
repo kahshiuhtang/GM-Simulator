@@ -2,7 +2,7 @@ package main.Player.Attributes;
 
 import java.util.Random;
 
-public class Kick {
+public class Kick extends Attribute{
 	private int kickPower, kickAccuracy;
 	private int kickPowerPot, kickAccuracyPot;
 

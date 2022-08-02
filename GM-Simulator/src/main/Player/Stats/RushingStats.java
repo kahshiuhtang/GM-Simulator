@@ -9,4 +9,44 @@ public class RushingStats {
         longRush = 0;
         fumbles = 0;
     }
+
+    public int getRushes() {
+        return rushes;
+    }
+
+    public void setRushes(int rushes) {
+        this.rushes = rushes;
+    }
+
+    public int getYards() {
+        return yards;
+    }
+
+    public void setYards(int yards) {
+        this.yards = yards;
+    }
+
+    public int getTouchdowns() {
+        return touchdowns;
+    }
+
+    public void setTouchdowns(int touchdowns) {
+        this.touchdowns = touchdowns;
+    }
+
+    public int getLongRush() {
+        return longRush;
+    }
+
+    public void setLongRush(int longRush) {
+        this.longRush = longRush;
+    }
+
+    public int getFumbles() {
+        return fumbles;
+    }
+
+    public void setFumbles(int fumbles) {
+        this.fumbles = fumbles;
+    }
 }

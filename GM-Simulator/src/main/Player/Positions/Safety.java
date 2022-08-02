@@ -1,5 +1,6 @@
 package main.Player.Positions;
 
+import main.Player.Attributes.Attribute;
 import main.Player.Person;
 import main.Player.PositionName;
 import main.Player.Attributes.DefendAir;
@@ -19,6 +20,10 @@ public class Safety extends Person {
         universal = new Universal(65, 65, 70, 70, 60, 70, 70, 65);
     }
 
+    public Attribute[] getAttributes(){
+        Attribute[] ans = {defendAir, defendGround, universal};
+        return ans;
+    }
     public int overall(){
         return (defendGround.sumOverall()/6 + defendAir.sumOverall()/6 + universal.sumOverall()/8)/3;
     }

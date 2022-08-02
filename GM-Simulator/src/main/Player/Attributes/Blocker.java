@@ -2,7 +2,7 @@ package main.Player.Attributes;
 
 import java.util.Random;
 
-public class Blocker {
+public class Blocker extends Attribute{
 
 	private int passBlock, runBlock, pancake;
 

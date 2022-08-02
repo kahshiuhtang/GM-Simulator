@@ -1,5 +1,6 @@
 package main.Player.Positions;
 
+import main.Player.Attributes.Attribute;
 import main.Player.Person;
 import main.Player.PositionName;
 import main.Player.Attributes.DefendAir;
@@ -16,6 +17,11 @@ public class Cornerback extends Person {
         defendAir = new DefendAir(65,65,60,65,55,65);
         defendGround = new DefendGround(55,35,30,30,40,55,50);
         universal = new Universal(60, 70, 70, 70, 60, 70, 75, 60);
+    }
+
+    public Attribute[] getAttributes(){
+        Attribute[] ans = {defendAir, defendGround, universal};
+        return ans;
     }
 
     public int overall(){

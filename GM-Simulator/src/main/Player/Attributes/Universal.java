@@ -2,7 +2,7 @@ package main.Player.Attributes;
 
 import java.util.Random;
 
-public class Universal {
+public class Universal extends Attribute{
 
 	private int strength, agility, speed, acceleration, stamina, awareness, jumping, toughness;
 
