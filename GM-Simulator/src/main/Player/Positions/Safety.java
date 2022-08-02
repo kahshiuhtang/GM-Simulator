@@ -24,6 +24,13 @@ public class Safety extends Person {
         Attribute[] ans = {defendAir, defendGround, universal};
         return ans;
     }
+
+    public int avgMainTraitOverall(){
+        return defendAir.sumOverall();
+    }
+    public int avgMainTraitPotential(){
+        return defendAir.sumPotential();
+    }
     public int overall(){
         return (defendGround.sumOverall()/6 + defendAir.sumOverall()/6 + universal.sumOverall()/8)/3;
     }

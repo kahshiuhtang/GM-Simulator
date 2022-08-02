@@ -19,6 +19,13 @@ public class Blocker extends Attribute{
 		runBlock = runBlockPot - 13 - ((int) (sd*5));
 		pancake = pancakePot - 13 - ((int) (sd*5));
 	}
+	public int avgOverall(){
+		return sumOverall()/3;
+	}
+
+	public int avgPotential(){
+		return sumPotential()/3;
+	}
 	public int sumOverall(){
 		return passBlock + runBlock + pancake;
 	}

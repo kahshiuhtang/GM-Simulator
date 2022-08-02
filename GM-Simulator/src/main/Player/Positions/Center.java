@@ -18,6 +18,13 @@ public class Center extends Person {
         universal = new Universal(70, 50, 50, 40, 70, 60, 40, 75);
     }
 
+    public int avgMainTraitOverall(){
+        return blocker.sumOverall();
+    }
+    public int avgMainTraitPotential(){
+        return blocker.sumPotential();
+    }
+
     public Attribute[] getAttributes(){
         Attribute[] ans = {blocker, universal};
         return ans;

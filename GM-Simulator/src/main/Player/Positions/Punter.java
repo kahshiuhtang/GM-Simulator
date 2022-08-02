@@ -17,6 +17,13 @@ public class Punter extends Person {
 		universal = new Universal(40, 45, 50, 50, 70, 55, 35, 55);
 	}
 
+	public int avgMainTraitOverall(){
+		return kick.sumOverall();
+	}
+	public int avgMainTraitPotential(){
+		return kick.sumPotential();
+	}
+
 	public Attribute[] getAttributes(){
 		Attribute[] ans = {kick, universal};
 		return ans;

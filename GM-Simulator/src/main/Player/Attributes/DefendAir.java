@@ -26,6 +26,14 @@ public class DefendAir extends Attribute{
 
 	}
 
+	public int avgOverall(){
+		return sumOverall()/6;
+	}
+
+	public int avgPotential(){
+		return sumPotential()/6;
+	}
+
 	public int sumOverall(){
 		return pursuit + manCoverage + zoneCoverage + press + highlightReel + catching;
 	}

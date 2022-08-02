@@ -20,6 +20,13 @@ public class DefensiveEnd extends Person {
         universal = new Universal(75 ,60 ,60 ,60 ,65,65, 60 ,75);
     }
 
+    public int avgMainTraitOverall(){
+        return defendGround.sumOverall();
+    }
+    public int avgMainTraitPotential(){
+        return defendGround.sumPotential();
+    }
+
     public Attribute[] getAttributes(){
         Attribute[] ans = {defendAir, defendGround, universal};
         return ans;

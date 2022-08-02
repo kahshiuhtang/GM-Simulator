@@ -18,10 +18,18 @@ public class Halfback extends Person {
 		universal = new Universal(60, 70, 65, 70, 60, 65, 70, 65);
 	}
 
+	public int avgMainTraitOverall(){
+		return runner.sumOverall();
+	}
+	public int avgMainTraitPotential(){
+		return runner.sumPotential();
+	}
+
 	public Attribute[] getAttributes(){
 		Attribute[] ans = {blocker, receiver, runner, universal};
 		return ans;
 	}
+
 	public int overall(){
 		return (((int)(blocker.sumOverall()/2.1)) + receiver.sumOverall()/3 + runner.sumOverall()/6 + universal.sumOverall()/8)/4;
 	}

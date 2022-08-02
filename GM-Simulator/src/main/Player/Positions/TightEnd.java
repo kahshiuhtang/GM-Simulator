@@ -23,6 +23,13 @@ public class TightEnd extends Person {
         return ans;
     }
 
+    public int avgMainTraitOverall(){
+        return (blocker.sumOverall() + receiver.sumOverall())/2;
+    }
+    public int avgMainTraitPotential(){
+        return (blocker.sumPotential() + receiver.sumPotential())/2;
+    }
+
     public int overall(){
         return (((int)(blocker.sumOverall()/2.5)) + ((int)(receiver.sumOverall()/3.2)) + runner.sumOverall()/5 + universal.sumOverall()/8)/4;
     }

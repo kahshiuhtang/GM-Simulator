@@ -16,6 +16,13 @@ public class Kick extends Attribute{
 		kickAccuracy = kickAccuracyPot -  13 - ((int) (sd*5));
 	}
 
+	public int avgOverall(){
+		return sumOverall()/2;
+	}
+
+	public int avgPotential(){
+		return sumPotential()/2;
+	}
 	public int sumOverall(){
 		return kickPower + kickAccuracy;
 	}

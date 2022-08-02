@@ -32,7 +32,7 @@ public class Quarterback extends Person {
 		return(passer.sumPotential()/6 + universal.sumPotential()/8 + runner.sumPotential()/4)/3;
 	}
 	public String toString(){
-		return "Quarterback: " +passer.toString() + universal.toString() + runner.toString();
+		return "Quarterback: " + passer.toString() + universal.toString() + runner.toString();
 	}
 
 	public Passer getPasser() {

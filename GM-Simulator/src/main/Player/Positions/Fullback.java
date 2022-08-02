@@ -18,6 +18,13 @@ public class Fullback extends Person {
 		universal = new Universal(65, 60, 60, 55, 65, 55, 50, 70);
 	}
 
+	public int avgMainTraitOverall(){
+		return runner.sumOverall();
+	}
+	public int avgMainTraitPotential(){
+		return runner.sumPotential();
+	}
+
 	public Attribute[] getAttributes(){
 		Attribute[] ans = {blocker, receiver, runner, universal};
 		return ans;

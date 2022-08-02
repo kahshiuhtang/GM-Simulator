@@ -30,6 +30,14 @@ public class Universal extends Attribute{
 		toughness=toughnessPot -  13 - ((int) (sd*5));
 	}
 
+	public int avgOverall(){
+		return sumOverall()/8;
+	}
+
+	public int avgPotential(){
+		return sumPotential()/8;
+	}
+
 	public int sumOverall(){
 		return strength + agility + speed + acceleration + stamina + awareness + jumping + toughness;
 	}

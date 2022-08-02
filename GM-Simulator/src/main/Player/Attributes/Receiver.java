@@ -19,6 +19,13 @@ public class Receiver extends Attribute{
 		routeRunning = routeRunningPot -  13 - ((int) (sd*5));
 		highlightReel = highlightReelPot -  13 - ((int) (sd*5));
 	}
+	public int avgOverall(){
+		return sumOverall()/4;
+	}
+
+	public int avgPotential(){
+		return sumPotential()/4;
+	}
 
 	public int sumOverall(){
 		return catching + trafficCatching + routeRunning + highlightReel;

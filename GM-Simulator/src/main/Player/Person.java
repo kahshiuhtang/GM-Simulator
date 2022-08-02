@@ -20,5 +20,7 @@ public abstract class Person {
 	public abstract int potential();
 	public abstract Attribute[] getAttributes();
 
+	public abstract int avgMainTraitOverall();
+
 
 }

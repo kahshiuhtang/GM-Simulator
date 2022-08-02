@@ -20,6 +20,13 @@ public class DefensiveTackle extends Person {
 		universal = new Universal(75, 55, 55, 50, 65, 65, 50, 75);
 	}
 
+	public int avgMainTraitOverall(){
+		return defendGround.sumOverall();
+	}
+	public int avgMainTraitPotential(){
+		return defendGround.sumPotential();
+	}
+
 	public Attribute[] getAttributes(){
 		Attribute[] ans = {defendAir, defendGround, universal};
 		return ans;

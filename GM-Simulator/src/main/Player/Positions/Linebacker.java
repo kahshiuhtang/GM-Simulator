@@ -19,7 +19,12 @@ public class Linebacker extends Person {
 		defendGround = new DefendGround(60, 55, 50, 60, 70, 70, 65);
 		universal = new Universal(70, 65, 65, 65, 65, 75, 70, 70);
 	}
-
+	public int avgMainTraitOverall(){
+		return (defendAir.sumOverall() + defendGround.sumOverall())/2;
+	}
+	public int avgMainTraitPotential(){
+		return (defendAir.sumPotential() + defendGround.sumPotential())/2;
+	}
 	public Attribute[] getAttributes(){
 		Attribute[] ans = {defendAir, defendGround, universal};
 		return ans;

@@ -21,6 +21,13 @@ public class OffensiveTackle extends Person {
         return ans;
     }
 
+    public int avgMainTraitOverall(){
+        return blocker.sumOverall();
+    }
+    public int avgMainTraitPotential(){
+        return blocker.sumPotential();
+    }
+
     public int overall(){
         return (blocker.sumOverall()/3 + universal.sumOverall()/8)/2;
     }

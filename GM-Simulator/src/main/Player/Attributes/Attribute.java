@@ -10,4 +10,9 @@ public abstract class Attribute {
 
     public abstract int sumPotential();
 
+    public abstract int avgOverall();
+
+    public abstract int avgPotential();
+
+
 }

@@ -18,6 +18,12 @@ public class Kicker extends Person{
 		Attribute[] ans = {kick, universal};
 		return ans;
 	}
+	public int avgMainTraitOverall(){
+		return kick.sumOverall();
+	}
+	public int avgMainTraitPotential(){
+		return kick.sumPotential();
+	}
 
 	public int overall(){
 		return (kick.sumOverall()/2 + universal.sumOverall()/6)/2;

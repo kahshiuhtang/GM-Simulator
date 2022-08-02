@@ -24,6 +24,13 @@ public class Cornerback extends Person {
         return ans;
     }
 
+    public int avgMainTraitOverall(){
+        return defendAir.sumOverall();
+    }
+    public int avgMainTraitPotential(){
+        return defendAir.sumPotential();
+    }
+
     public int overall(){
         return (defendGround.sumOverall()/5 + defendAir.sumOverall()/6 + universal.sumOverall()/8)/3;
     }

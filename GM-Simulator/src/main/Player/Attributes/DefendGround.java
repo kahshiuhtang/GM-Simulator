@@ -25,6 +25,13 @@ public class DefendGround extends Attribute{
 		playRecognition = playRecognitionPot - 13 - ((int) (sd*5));
 		hitPower = hitPowerPot - 13 - ((int) (sd*5));
 	}
+	public int avgOverall(){
+		return sumOverall()/7;
+	}
+
+	public int avgPotential(){
+		return sumPotential()/7;
+	}
 
 	public int sumOverall(){
 		return  tackle + powerRush + skillRush + blockShed + runStop + playRecognition + hitPower;

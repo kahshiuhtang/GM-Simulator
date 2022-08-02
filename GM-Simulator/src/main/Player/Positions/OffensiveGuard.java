@@ -15,6 +15,12 @@ public class OffensiveGuard extends Person {
 		blocker = new Blocker(65, 65, 55);
 		universal = new Universal(70, 50, 45, 40, 70, 60, 40, 75);
 	}
+	public int avgMainTraitOverall(){
+		return blocker.sumOverall();
+	}
+	public int avgMainTraitPotential(){
+		return blocker.sumPotential();
+	}
 
 	public Attribute[] getAttributes(){
 		Attribute[] ans = {blocker, universal};

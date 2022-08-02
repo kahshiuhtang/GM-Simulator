@@ -27,6 +27,14 @@ public class Passer extends Attribute{
 		riskTaking = riskTakingPot -  13 - ((int) (sd*5));
 	}
 
+	public int avgOverall(){
+		return sumOverall()/7;
+	}
+
+	public int avgPotential(){
+		return sumPotential()/7;
+	}
+
 	public int sumOverall(){
 		return throwPower + shortAccuracy + mediumAccuracy + deepAccuracy + improvisation + underPressure + riskTaking;
 	}

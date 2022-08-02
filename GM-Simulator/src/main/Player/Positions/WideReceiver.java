@@ -24,6 +24,12 @@ public class WideReceiver extends Person {
 		Attribute[] ans = {blocker, receiver, runner, universal};
 		return ans;
 	}
+	public int avgMainTraitOverall(){
+		return receiver.sumOverall();
+	}
+	public int avgMainTraitPotential(){
+		return receiver.sumPotential();
+	}
 
 	public int overall(){
 		return (((int)(blocker.sumOverall()/1.5)) + receiver.sumOverall()/4 + runner.sumOverall()/5 + universal.sumOverall()/8)/4;
