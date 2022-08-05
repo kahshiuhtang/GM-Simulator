@@ -13,4 +13,15 @@ public class Pick {
         this.player = p;
     }
 
+    public int getRound() {
+        return round;
+    }
+
+    public int getPosition() {
+        return position;
+    }
+
+    public Person getPlayer() {
+        return player;
+    }
 }
