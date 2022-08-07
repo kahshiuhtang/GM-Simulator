@@ -4,9 +4,15 @@ import main.Team.Team;
 
 public class League {
     private Team[] teams;
-    public League(int teamCount){
+    private int year;
+    public League(int teamCount, int year){
         teams = new Team[teamCount];
+        this.year = year;
         generateTeams();
+    }
+
+    public void updateYear(){
+        year++;
     }
 
     public void generateTeams(){
