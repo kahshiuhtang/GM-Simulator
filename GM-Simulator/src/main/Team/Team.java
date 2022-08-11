@@ -4,9 +4,13 @@ import main.Player.Person;
 import main.Player.Positions.*;
 
 public class Team {
-    public Person[] team;
+    private Person[] team;
+    private Playstyle playstyle;
+    private Finance finances;
     public Team(){
         team = new Person[53];
+        playstyle = new Playstyle();
+        finances = new Finance();
         generateTeam();
     }
     public void generateTeam(){

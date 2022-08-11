@@ -13,6 +13,10 @@ public class Finance {
         scoutingCost = sc;
     }
 
+    public Finance(){
+
+    }
+
     public int calculateRevenue(){
         return 0;
     }
