@@ -1,8 +1,10 @@
 package main.Team;
 
+import java.util.Random;
+
 public class Finance {
 
-    private int ticketPrice, playerSalary, coachesSalary, stadiumMaintenanceCost, trainingFacilityCost, scoutingCost;
+    private double ticketPrice, playerSalary, coachesSalary, stadiumMaintenanceCost, trainingFacilityCost, scoutingCost;
 
     public Finance(int tp, int ps, int cs, int sm, int tf, int sc){
         ticketPrice = tp;
@@ -14,14 +16,20 @@ public class Finance {
     }
 
     public Finance(){
-
+        Random r = new Random();
+        ticketPrice = r.nextDouble()*10;
+        playerSalary = r.nextDouble()*10;
+        coachesSalary = r.nextDouble()*10;
+        stadiumMaintenanceCost = r.nextDouble()*10;
+        trainingFacilityCost = r.nextDouble()*10;
+        scoutingCost = r.nextDouble()*10;
     }
 
-    public int calculateRevenue(){
+    public double calculateRevenue(){
         return 0;
     }
 
-    public int getTicketPrice() {
+    public double getTicketPrice() {
         return ticketPrice;
     }
 
@@ -29,7 +37,7 @@ public class Finance {
         this.ticketPrice = ticketPrice;
     }
 
-    public int getPlayerSalary() {
+    public double getPlayerSalary() {
         return playerSalary;
     }
 
@@ -37,7 +45,7 @@ public class Finance {
         this.playerSalary = playerSalary;
     }
 
-    public int getCoachesSalary() {
+    public double getCoachesSalary() {
         return coachesSalary;
     }
 
@@ -45,7 +53,7 @@ public class Finance {
         this.coachesSalary = coachesSalary;
     }
 
-    public int getStadiumMaintenanceCost() {
+    public double getStadiumMaintenanceCost() {
         return stadiumMaintenanceCost;
     }
 
@@ -53,7 +61,7 @@ public class Finance {
         this.stadiumMaintenanceCost = stadiumMaintenanceCost;
     }
 
-    public int getTrainingFacilityCost() {
+    public double getTrainingFacilityCost() {
         return trainingFacilityCost;
     }
 
@@ -61,7 +69,7 @@ public class Finance {
         this.trainingFacilityCost = trainingFacilityCost;
     }
 
-    public int getScoutingCost() {
+    public double getScoutingCost() {
         return scoutingCost;
     }
 

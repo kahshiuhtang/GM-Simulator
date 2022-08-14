@@ -5,7 +5,7 @@ import main.Player.Person;
 public class DefensiveLineUp extends LineUp{
 
     public DefensiveLineUp(){
-        
+
     }
 
     @Override

@@ -11,6 +11,12 @@ public class League {
         generateTeams();
     }
 
+    public void generateFreeAgents(){
+        for(Team t: teams){
+
+        }
+    }
+
     public void updateYear(){
         year++;
     }

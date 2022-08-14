@@ -4,11 +4,12 @@ import java.util.Random;
 
 public class PersonalProfile {
 	private String firstName, lastName;
-	private int age, height, weight, contract;
+	private int age, height, weight;
 	public PersonalProfile(PositionName p) {
 		Random r = new Random();
 		generateHeight(p, r);
 		generateWeight(p, r);
+		age = (int) r.nextGaussian()*1+21;
 
 	}
 	public void generateHeight(PositionName p, Random r){
@@ -37,4 +38,43 @@ public class PersonalProfile {
 		}
 	}
 
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public int getHeight() {
+		return height;
+	}
+
+	public void setHeight(int height) {
+		this.height = height;
+	}
+
+	public int getWeight() {
+		return weight;
+	}
+
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
 }

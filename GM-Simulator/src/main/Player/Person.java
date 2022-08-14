@@ -9,6 +9,8 @@ public abstract class Person {
 	private Badges badges;
 	private PersonalProfile profile;
 
+	private Contract contract;
+
 	public Person(PositionName p) {
 		history = new PlayerHistory();
 		badges = new Badges();
@@ -30,6 +32,14 @@ public abstract class Person {
 
 	public PersonalProfile getProfile() {
 		return profile;
+	}
+
+	public Contract getContract() {
+		return contract;
+	}
+
+	public void setContract(Contract contract) {
+		this.contract = contract;
 	}
 
 	public abstract int overall();

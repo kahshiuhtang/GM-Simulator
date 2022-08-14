@@ -7,10 +7,12 @@ public class Team {
     private Person[] team;
     private Playstyle playstyle;
     private Finance finances;
+    private Coach coach;
     public Team(){
         team = new Person[53];
         playstyle = new Playstyle();
         finances = new Finance();
+        coach = new Coach();
         generateTeam();
     }
     public void generateTeam(){

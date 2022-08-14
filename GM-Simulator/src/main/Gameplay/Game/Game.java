@@ -1,16 +1,17 @@
 package main.Gameplay.Game;
 
-import main.Player.Person;
+import main.Team.Lineup.DefensiveLineUp;
+import main.Team.Lineup.OffensiveLineUp;
 
 public class Game {
     private double time;
-    private Person[] offense1;
-    private Person[] offense2;
-    private Person[] defense1;
-    private Person[] defense2;
+    private OffensiveLineUp offense1;
+    private OffensiveLineUp offense2;
+    private DefensiveLineUp defense1;
+    private DefensiveLineUp defense2;
 
 
-    public Game(Person[] o1, Person[] d1, Person[] o2, Person[] d2){
+    public Game(OffensiveLineUp o1, DefensiveLineUp d1, OffensiveLineUp o2, DefensiveLineUp d2){
         time = 60.0;
         offense1 = o1;
         defense1 = d1;
