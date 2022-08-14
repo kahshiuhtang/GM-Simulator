@@ -6,6 +6,9 @@ public class PuntingStats {
         punts = 0;
         totalYards = 0;
     }
+    public double evaluate(){
+        return(((double)totalYards)/((double)punts)-39);
+    }
 
     public int getPunts() {
         return punts;

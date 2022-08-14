@@ -10,6 +10,11 @@ public class ReceivingStats {
         fumbles = 0;
     }
 
+    public double evaluate(){
+        double avg = ((double) yards) / ((double) targets);
+        return avg+((double)touchdowns)/4+yards/400 -((double)fumbles);
+    }
+
     public int getTargets() {
         return targets;
     }

@@ -18,6 +18,10 @@ public class DefendingGroundStats {
         fumblesLost = 0;
     }
 
+    public double evaluate(){
+        return forcedFumbles/3.0 + fumbleRecovery/2.0 + TFL/10.0 +tackles/50.0 -penalties/2+ safety/2 + sacks/5.0;
+    }
+
     public int getForcedFumbles() {
         return forcedFumbles;
     }

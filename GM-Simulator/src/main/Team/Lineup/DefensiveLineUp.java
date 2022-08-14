@@ -4,22 +4,25 @@ import main.Player.Person;
 
 public class DefensiveLineUp extends LineUp{
 
-    public DefensiveLineUp(){
-
+    private Person[] players;
+    public DefensiveLineUp(Person[] players){
+        this.players = players;
     }
 
-    @Override
-    public LineUp getLineUp() {
-        return null;
+    public Person[] getLineUp() {
+        return players;
     }
 
-    @Override
     public void changePlayer(Person replaced, Person replacee) {
-
+        for(int i = 0; i < players.length;i++){
+            if(players[i].equals(replaced)){
+                players[i] = replacee;
+                return;
+            }
+        }
     }
 
-    @Override
-    public Person injury() {
-        return null;
+    public Person injury(int index) {
+        return players[index];
     }
 }

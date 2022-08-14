@@ -7,8 +7,8 @@ public abstract class LineUp {
     public LineUp(){
 
     }
-    public abstract LineUp getLineUp();
+    public abstract Person[] getLineUp();
     public abstract void changePlayer(Person replaced, Person replacee);
-    public abstract Person injury();
+    public abstract Person injury(int index);
 
 }

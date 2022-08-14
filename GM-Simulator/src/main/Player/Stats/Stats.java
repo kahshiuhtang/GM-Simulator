@@ -16,7 +16,10 @@ public class Stats {
         pa = new PassingStats();
         pu = new PuntingStats();
         r = new RushingStats();
+    }
 
+    public double evaluate(){
+        return 0.0;
     }
 
     public BlockingStats getBlockingStats() {

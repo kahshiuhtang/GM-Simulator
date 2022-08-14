@@ -6,6 +6,9 @@ public class BlockingStats {
         sacksAllowed = 0;
         penalties = 0;
     }
+    public double evalaute(){
+        return 10-sacksAllowed/3-penalties/5;
+    }
 
     public int getSacksAllowed() {
         return sacksAllowed;

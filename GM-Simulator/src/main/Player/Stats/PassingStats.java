@@ -10,6 +10,11 @@ public class PassingStats {
         interceptions = 0;
         longPass = 0;
     }
+    public double evaluate(){
+        double completionPercent  = ((double) completions) / ((double) attempts);
+        double yardsPerCompletion = ((double) yards) / ((double) attempts);
+        return completionPercent*5 + (yardsPerCompletion - 9) + ((double)touchdowns)/10 - ((double)interceptions)/3;
+    }
 
     public int getCompletions() {
         return completions;

@@ -5,4 +5,7 @@ public class PlayerHistory {
     public PlayerHistory(){
         yearlyStats = new YearStats[1];
     }
+    public YearStats[] getStats(){
+        return yearlyStats;
+    }
 }

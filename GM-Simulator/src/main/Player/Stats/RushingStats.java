@@ -9,6 +9,10 @@ public class RushingStats {
         longRush = 0;
         fumbles = 0;
     }
+    public double evaluate(){
+        double avg = ((double) yards) / ((double) rushes);
+        return avg+((double)touchdowns)/4+yards/500 -((double)fumbles)/2;
+    }
 
     public int getRushes() {
         return rushes;
