@@ -1,7 +1,7 @@
 package main.Player.Stats;
 
 public class KickingStats {
-    int fga10, fg10, fga20, fg20, fga30, fg30, fga40, fg40, fga50, fg50, longMade, fieldGoalMade, fieldGoalAttempt, extraPointAttempts, extraPointMade;
+    int fga10, fg10, fga20, fg20, fga30, fg30, fga40, fg40, fga50, fg50, longMade, fieldGoalMade, fieldGoalAttempts, extraPointAttempts, extraPointMade;
     public KickingStats(){
         fga10 = 0;
         fg10 = 0;
@@ -15,9 +15,14 @@ public class KickingStats {
         fg50 = 0;
         longMade = 0;
         fieldGoalMade = 0;
-        fieldGoalAttempt = 0;
+        fieldGoalAttempts = 0;
         extraPointAttempts = 0;
         extraPointMade = 0;
+    }
+    public double evaluate(){
+        double avgFG = ((double) fieldGoalMade)/((double) fieldGoalAttempts);
+        double avgEP = ((double) extraPointMade)/((double) extraPointAttempts);
+        return avgFG*5+ avgEP*5;
     }
 
     public int getFga10() {
@@ -116,12 +121,12 @@ public class KickingStats {
         this.fieldGoalMade = fieldGoalMade;
     }
 
-    public int getFieldGoalAttempt() {
-        return fieldGoalAttempt;
+    public int getFieldGoalAttempts() {
+        return fieldGoalAttempts;
     }
 
-    public void setFieldGoalAttempt(int fieldGoalAttempt) {
-        this.fieldGoalAttempt = fieldGoalAttempt;
+    public void setFieldGoalAttempts(int fieldGoalAttempt) {
+        this.fieldGoalAttempts = fieldGoalAttempt;
     }
 
     public int getExtraPointAttempts() {

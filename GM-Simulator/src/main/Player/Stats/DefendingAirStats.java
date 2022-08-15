@@ -1,15 +1,17 @@
 package main.Player.Stats;
 
 public class DefendingAirStats {
-    private int interceptions, yardsAfterInterception, touchdowns, passesDefended, penalties, fumbles, fumblesLost;
+    private int interceptions, touchdowns, passesDefended, penalties, fumbles, fumblesLost;
     public DefendingAirStats(){
         interceptions = 0;
-        yardsAfterInterception = 0;
         touchdowns = 0;
         passesDefended = 0;
         penalties = 0;
         fumbles = 0;
         fumblesLost = 0;
+    }
+    public double evaluate(){
+        return interceptions/2.0 + touchdowns + passesDefended/4.0-penalties/3.0-fumbles;
     }
 
     public int getInterceptions() {
@@ -20,13 +22,6 @@ public class DefendingAirStats {
         this.interceptions = interceptions;
     }
 
-    public int getYardsAfterInterception() {
-        return yardsAfterInterception;
-    }
-
-    public void setYardsAfterInterception(int yardsAfterInterception) {
-        this.yardsAfterInterception = yardsAfterInterception;
-    }
 
     public int getTouchdowns() {
         return touchdowns;

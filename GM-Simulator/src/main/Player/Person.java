@@ -8,8 +8,8 @@ public abstract class Person {
 	private PositionName positionName;
 	private Badges badges;
 	private PersonalProfile profile;
-
 	private Contract contract;
+
 
 	public Person(PositionName p) {
 		history = new PlayerHistory();
@@ -45,7 +45,7 @@ public abstract class Person {
 	public abstract int overall();
 	public abstract int potential();
 	public abstract Attribute[] getAttributes();
-
+	public abstract double rating();
 	public abstract int avgMainTraitOverall();
 
 

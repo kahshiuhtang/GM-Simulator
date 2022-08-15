@@ -1,6 +1,7 @@
 package main.Player.Stats;
 
 public class Stats {
+    private int year;
     private BlockingStats b;
     private DefendingAirStats dA;
     private DefendingGroundStats dG;
@@ -8,7 +9,7 @@ public class Stats {
     private PassingStats pa;
     private PuntingStats pu;
     private RushingStats r;
-    public Stats(){
+    public Stats(int year){
         b = new BlockingStats();
         dA = new DefendingAirStats();
         dG = new DefendingGroundStats();
@@ -16,6 +17,7 @@ public class Stats {
         pa = new PassingStats();
         pu = new PuntingStats();
         r = new RushingStats();
+        this.year = year;
     }
 
     public double evaluate(){
@@ -76,5 +78,13 @@ public class Stats {
 
     public void setRushingStats(RushingStats r) {
         this.r = r;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
     }
 }

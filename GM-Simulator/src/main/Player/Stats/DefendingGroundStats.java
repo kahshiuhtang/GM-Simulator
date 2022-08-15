@@ -1,7 +1,7 @@
 package main.Player.Stats;
 
 public class DefendingGroundStats {
-    private int forcedFumbles, fumbleRecovery, yardsReturned, touchdowns, sacks, tackles, soloTackles, assistedTackles, TFL, safety, penalties, fumbles, fumblesLost;
+    private int forcedFumbles, fumbleRecovery, yardsReturned, touchdowns, sacks, tackles, soloTackles,  TFL, safety, penalties, fumbles, fumblesLost;
     public DefendingGroundStats(){
         forcedFumbles = 0;
         fumbleRecovery = 0;
@@ -10,7 +10,6 @@ public class DefendingGroundStats {
         sacks = 0;
         tackles = 0;
         soloTackles = 0;
-        assistedTackles = 0;
         TFL = 0;
         safety = 0;
         penalties = 0;
@@ -76,14 +75,6 @@ public class DefendingGroundStats {
 
     public void setSoloTackles(int soloTackles) {
         this.soloTackles = soloTackles;
-    }
-
-    public int getAssistedTackles() {
-        return assistedTackles;
-    }
-
-    public void setAssistedTackles(int assistedTackles) {
-        this.assistedTackles = assistedTackles;
     }
 
     public int getTFL() {

@@ -19,6 +19,14 @@ public class YearStats {
     public int getYearsCounted(){
         return yearsCounted;
     }
+    public Stats getYear(int year){
+        for(int i = 0; i < yearsCounted; i++){
+            if(yearStats[i].getYear() == year){
+                return yearStats[i];
+            }
+        }
+        return null;
+    }
 
     public Stats[] getYearStats(){
         return yearStats;
